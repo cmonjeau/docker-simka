@@ -17,7 +17,7 @@ docker run -it --rm cmonjeau/simka:1.3.2 /opt/simka/build/bin/simka -in /opt/sim
 
 Create a new job with these parameters:
 
-"Container image" : cmonjeau/simka
+"Container image" : cmonjeau/simka:1.3.2
 
 "Command" : 
 
