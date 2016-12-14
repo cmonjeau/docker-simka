@@ -10,7 +10,7 @@ https://github.com/GATB/simka/tree/v1.3.2
 
 ```
 docker run -it --rm cmonjeau/simka:1.3.2 /opt/simka/build/bin/simka
-docker run -it __rm cmonjeau/simka:1.3.2 /opt/simka/build/bin/simka -in /opt/simka/example/simka_input.txt -out results -out-tmp temp_output
+docker run -it --rm cmonjeau/simka:1.3.2 /opt/simka/build/bin/simka -in /opt/simka/example/simka_input.txt -out results -out-tmp temp_output
 ```
 
 ### Run simka using Godocker (http://www.genouest.org/godocker/)
