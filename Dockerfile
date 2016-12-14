@@ -8,7 +8,7 @@ FROM debian:wheezy
 
 # Set noninterative mode
 ENV DEBIAN_FRONTEND noninteractive
-ENV PACKAGES wget make cmake gcc g++ zlib1g-dev bwa python git
+ENV PACKAGES wget make cmake gcc g++ zlib1g-dev bwa python git r-base r-cran-gplots
 
 ENV TAR https://github.com/GATB/simka/releases/download/v1.3.2/simka-v1.3.2-Source.tar.gz
 ENV SOURCE simka-v1.3.2-Source
