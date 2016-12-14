@@ -9,16 +9,16 @@ https://github.com/GATB/simka/tree/v1.3.2
 ### Print Simka using docker###
 
 ```
-docker run -it --rm cmonjeau/simka:1.3.2 /opt/simka/build/bin/simka
-docker run -it --rm cmonjeau/simka:1.3.2 /opt/simka/build/bin/simka -in /opt/simka/example/simka_input.txt -out results -out-tmp temp_output
-docker run -it --rm cmonjeau/simka:1.3.2 /opt/simka/scripts/create_heatmaps.py results
+docker run -it --rm cmonjeau/simka /opt/simka/build/bin/simka
+docker run -it --rm cmonjeau/simka /opt/simka/build/bin/simka -in /opt/simka/example/simka_input.txt -out results -out-tmp temp_output
+docker run -it --rm cmonjeau/simka /opt/simka/scripts/create_heatmaps.py results
 ```
 
 ### Run simka using Godocker (http://www.genouest.org/godocker/)
 
 Create a new job with these parameters:
 
-"Container image" : cmonjeau/simka:1.3.2
+"Container image" : cmonjeau/simka
 
 "Command" : 
 
