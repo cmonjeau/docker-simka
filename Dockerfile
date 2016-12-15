@@ -1,5 +1,5 @@
 ############################################################
-# Dockerfile to build simka tool container image
+# Dockerfile to build simka v1.3.2 tool container image
 # Based on debian wheezy
 ############################################################
 
@@ -12,7 +12,7 @@ ENV PACKAGES wget make cmake gcc g++ zlib1g-dev bwa python git r-base r-cran-gpl
 
 ENV TAR https://github.com/GATB/simka/releases/download/v1.3.2/simka-v1.3.2-Source.tar.gz
 ENV SOURCE simka-v1.3.2-Source
-ENV DIR /root
+ENV DIR /opt
 
 ################## DEPENDENCIES INSTALLATION ######################
 
@@ -27,7 +27,7 @@ RUN wget ${TAR} -O - | tar xvzf -
 WORKDIR ${DIR}/${SOURCE}
 RUN sh INSTALL
 
-RUN ln -s ${DIR}/${SOURCE} /opt/simka
+RUN ln -s ${DIR}/${SOURCE} ${DIR}//simka
 RUN chmod -R u+rx /opt/ 
 
 ##################### Maintainer #####################
